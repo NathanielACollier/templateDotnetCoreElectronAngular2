@@ -13,6 +13,7 @@ namespace electronAngular2
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseContentRoot(System.IO.Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
                 .Build();
     }

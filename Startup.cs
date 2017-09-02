@@ -22,6 +22,7 @@ namespace electronAngular2{
         {
             app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
         }
     }
 }
