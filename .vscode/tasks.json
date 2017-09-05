@@ -4,12 +4,15 @@
     "args": [],
     "tasks": [
         {
-            "taskName": "dotnet build",
+            "taskName": "dotnet-build",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "command": "build",
+            "command": "dotnet",
+            "args": [
+                "build"
+            ],
             "options": {
                 "cwd": "${workspaceRoot}"
             },
